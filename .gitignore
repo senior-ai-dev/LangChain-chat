@@ -9,6 +9,10 @@
 !/libs/chatchat-server/chatchat/data/nltk_data
 config/
 .vscode/
+.env
+.env.* 
+*.secret
+
 
 # below are standard python ignore files
 # Byte-compiled / optimized / DLL files
