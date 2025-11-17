@@ -1,11 +1,3 @@
-from typing import Optional
-
-from pydantic import Field, BaseModel
-
-
-class CreateKnowledgeBaseParam(BaseModel):
-    knowledge_base_name: str = Field(default=None, description="知识库名称")
-    vector_store_type: str = Field(default=None, description="向量存储类型")
-    kb_info: Optional[str] = Field(default=None, description="知识库信息")
-    vs_type: Optional[str] = Field(default=None, description="向量库类型")
-    embed_model: Optional[str] = Field(default=None, description="向量化模型")
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ff862849c3d516730ae01056905c315805eff44ba8b81283801678c65223a49
+size 532

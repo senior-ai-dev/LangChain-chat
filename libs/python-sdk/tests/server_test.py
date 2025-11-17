@@ -1,5 +1,3 @@
-from open_chatcaht.chatchat_api import ChatChat
-
-# chatchat = ChatChat()
-# print(chatchat.server.get_server_configs())
-# print(chatchat.server.get_prompt_template())
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f38b6927e2df72d8cfa231f3f0cbe4ae6586a7e541a5ac2032847879739cebb
+size 171

@@ -1,17 +1,3 @@
-from datetime import datetime
-
-from sqlalchemy import Column, DateTime, Integer, String
-
-
-class BaseModel:
-    """
-    基础模型
-    """
-
-    id = Column(Integer, primary_key=True, index=True, comment="主键ID")
-    create_time = Column(DateTime, default=datetime.utcnow, comment="创建时间")
-    update_time = Column(
-        DateTime, default=None, onupdate=datetime.utcnow, comment="更新时间"
-    )
-    create_by = Column(String, default=None, comment="创建者")
-    update_by = Column(String, default=None, comment="更新者")
+version https://git-lfs.github.com/spec/v1
+oid sha256:3627ca90eba54107b42e2ab554e12e9c4b40e56d353b1c311e840e1c53216a67
+size 562

@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""**Callback handlers** allow listening to events in LangChain.
-
-**Class hierarchy:**
-
-.. code-block::
-
-    BaseCallbackHandler --> <name>CallbackHandler  # Example: AimCallbackHandler
-"""
-from langchain_chatchat.callbacks.agent_callback_handler import (
-    AgentExecutorAsyncIteratorCallbackHandler,
-)
-
-__all__ = [
-    "AgentExecutorAsyncIteratorCallbackHandler",
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1a51128a4639b8e0a94aaa3df5491bca09c641a89c9dbe8d6775b2e644e3bb0
+size 409

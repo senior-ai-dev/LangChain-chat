@@ -1,27 +1,3 @@
-from __future__ import annotations
-
-
-from abc import ABCMeta, abstractmethod
-
-from langchain.vectorstores import VectorStore
-
-
-class BaseRetrieverService(metaclass=ABCMeta):
-    def __init__(self, **kwargs):
-        self.do_init(**kwargs)
-
-    @abstractmethod
-    def do_init(self, **kwargs):
-        pass
-
-    @abstractmethod
-    def from_vectorstore(
-        vectorstore: VectorStore,
-        top_k: int,
-        score_threshold: int | float,
-    ):
-        pass
-
-    @abstractmethod
-    def get_relevant_documents(self, query: str):
-        pass
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9b0d2db4a6cb6b33d77e053dd4776d57d1b383520532a9ecf38a98259c75380
+size 576

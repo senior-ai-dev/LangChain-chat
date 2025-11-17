@@ -1,12 +1,3 @@
-from open_chatcaht.chatchat_api import ChatChat
-
-# todo 之后改为标准测试
-# chatchat = ChatChat()
-# for data in chatchat.chat.kb_chat(query='你好', kb_name="example_kb", model='glm-4'):
-#     print(data)
-# for data in chatchat.chat.kb_chat(query='你好', kb_name="example_kb", model='glm-4'):
-#     print(data)
-#
-# for data in chatchat.chat.file_chat(query='你好', knowledge_id="16d57480d9654104b405648f54d2485e", model_name='glm-4'):
-#     print(data)
-# print(chatchat.chat.chat_feedback(message_id='a9bb673176cd4e34a827c63fd72945f2'))
+version https://git-lfs.github.com/spec/v1
+oid sha256:3df79c6e17f4420f751f010937612cf11d02c70857d5b009dd388995e8a0a6c6
+size 561

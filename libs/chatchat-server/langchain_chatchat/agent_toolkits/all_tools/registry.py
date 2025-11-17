@@ -1,22 +1,3 @@
-# -*- coding: utf-8 -*-
-from typing import Dict, Type
-
-from langchain_chatchat.agent_toolkits import AdapterAllTool
-from langchain_chatchat.agent_toolkits.all_tools.code_interpreter_tool import (
-    CodeInterpreterAdapterAllTool,
-)
-from langchain_chatchat.agent_toolkits.all_tools.drawing_tool import (
-    DrawingAdapterAllTool,
-)
-from langchain_chatchat.agent_toolkits.all_tools.struct_type import (
-    AdapterAllToolStructType,
-)
-from langchain_chatchat.agent_toolkits.all_tools.web_browser_tool import (
-    WebBrowserAdapterAllTool,
-)
-
-TOOL_STRUCT_TYPE_TO_TOOL_CLASS: Dict[AdapterAllToolStructType, Type[AdapterAllTool]] = {
-    AdapterAllToolStructType.CODE_INTERPRETER: CodeInterpreterAdapterAllTool,
-    AdapterAllToolStructType.DRAWING_TOOL: DrawingAdapterAllTool,
-    AdapterAllToolStructType.WEB_BROWSER: WebBrowserAdapterAllTool,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e2634caa666e2713e14eb067e60ca9a06f086abb53cff62869893602ddd91ea
+size 868

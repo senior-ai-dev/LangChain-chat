@@ -1,24 +1,3 @@
-import sys
-from pathlib import Path
-
-root_path = Path(__file__).parent.parent.parent
-sys.path.append(str(root_path))
-
-from pprint import pprint
-from typing import List
-
-import pytest
-
-from chatchat.webui_pages.utils import ApiRequest
-
-api = ApiRequest()
-
-
-@pytest.mark.parametrize("type", ["llm_model"])
-def test_get_prompt_template(type):
-    print(f"prompt template for: {type}")
-    template = api.get_prompt_template(type=type)
-
-    print(template)
-    assert isinstance(template, str)
-    assert len(template) > 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:38c6960d48f4981c22eb61e803cc8083f15bb37e2bf52d2911a37854aa0e6105
+size 543

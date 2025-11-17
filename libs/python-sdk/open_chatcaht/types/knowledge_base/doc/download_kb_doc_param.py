@@ -1,11 +1,3 @@
-from typing import List
-
-from pydantic import BaseModel, Field
-
-
-class DownloadKbDocParam(BaseModel):
-    knowledge_base_name: str = Field(
-        ..., description="知识库名称", examples=["samples"]
-    ),
-    file_name: str = Field(..., description="文件名称", examples=["test.txt"]),
-    preview: bool = Field(False, description="是：浏览器内预览；否：下载"),
+version https://git-lfs.github.com/spec/v1
+oid sha256:db51bc011d88480f3012bb4cf598ec3035d698b6d109a8b5cd59cc607b6c790f
+size 396

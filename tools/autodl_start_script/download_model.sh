@@ -1,3 +1,3 @@
-#!/bin/bash
-
-cd /root/autodl-tmp && conda run -n base pip install codewithgpu && conda run -n base cg down xxxiu/glm-4-9b-chat
+version https://git-lfs.github.com/spec/v1
+oid sha256:cda930c1e85d66a1da13ca08e767cdd497e64c8cc8633700733c5ccde1891009
+size 130

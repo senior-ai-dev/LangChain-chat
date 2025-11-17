@@ -1,5 +1,3 @@
-[virtualenvs]
-in-project = true
-
-[plugins.pypi_mirror]
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a928ae4d093c8fc7f2e010b1c2e020c2ffda54e4246029da5668c7955139c27
+size 109

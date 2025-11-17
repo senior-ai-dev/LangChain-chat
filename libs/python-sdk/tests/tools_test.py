@@ -1,5 +1,3 @@
-from open_chatcaht.chatchat_api import ChatChat
-
-chatchat = ChatChat()
-print(chatchat.tool.list())
-print(chatchat.tool.call('calculate', {"text": "3+5/2"}))
+version https://git-lfs.github.com/spec/v1
+oid sha256:76dfc7bcdc8da52c69b096cc138188bac14dbb144ed416f1a2d21b60020bd2be
+size 160

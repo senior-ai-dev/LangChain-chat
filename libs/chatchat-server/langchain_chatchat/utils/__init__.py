@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from langchain_chatchat.utils.history import History
-import pydantic
-PYDANTIC_V2 = pydantic.VERSION.startswith("2.")
-
-__all__ = ["History", "PYDANTIC_V2"]
+version https://git-lfs.github.com/spec/v1
+oid sha256:de1ce55ed592281a8c8fd3e8c6155ebf3774576dc445fb92c45aedab7a1887a7
+size 183

@@ -1,30 +1,3 @@
-from typing import Any, List
-
-from pydantic import BaseModel, Field
-
-
-class BaseResponse(BaseModel):
-    code: int = Field(200, description="API status code")
-    msg: str = Field("success", description="API status message")
-    data: Any = Field(None, description="API data")
-
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "code": 200,
-                "msg": "success",
-            }
-        }
-
-
-class ListResponse(BaseResponse):
-    data: List[Any] = Field(..., description="List of data")
-
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "code": 200,
-                "msg": "success",
-                "data": ["doc1.docx", "doc2.pdf", "doc3.txt"],
-            }
-        }
+version https://git-lfs.github.com/spec/v1
+oid sha256:00322fe48fd4752b581f361d36a0bf9daad4b6e1086d94b7d6f5225586870f1a
+size 789

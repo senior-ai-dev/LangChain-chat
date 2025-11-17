@@ -1,14 +1,3 @@
-from typing import Union, Optional, Any
-
-from pydantic import AnyUrl
-
-from open_chatcaht._constants import TEMPERATURE
-from open_chatcaht.types.standard_openai.base import OpenAIBaseInput
-
-
-class OpenAIAudioTranslationsInput(OpenAIBaseInput):
-    file: Union[Any, AnyUrl]
-    model: str
-    prompt: Optional[str] = None
-    response_format: Optional[str] = None
-    temperature: float = TEMPERATURE
+version https://git-lfs.github.com/spec/v1
+oid sha256:5fe14bd222f0002401b11cbb9c34f2c4cf2c630495c48a174ad91a16be1212d8
+size 413

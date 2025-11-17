@@ -1,16 +1,3 @@
-# LangChain 的 ArxivQueryRun 工具
-from chatchat.server.pydantic_v1 import Field
-
-from .tools_registry import regist_tool
-
-from langchain_chatchat.agent_toolkits.all_tools.tool import (
-    BaseToolOutput,
-)
-
-@regist_tool(title="ARXIV论文")
-def arxiv(query: str = Field(description="The search query title")):
-    """A wrapper around Arxiv.org for searching and retrieving scientific articles in various fields."""
-    from langchain.tools.arxiv.tool import ArxivQueryRun
-
-    tool = ArxivQueryRun()
-    return BaseToolOutput(tool.run(tool_input=query))
+version https://git-lfs.github.com/spec/v1
+oid sha256:92325be68581b0bd40cef69b5e721cc7735e09a11694d98fe97e8ebe6457dceb
+size 574

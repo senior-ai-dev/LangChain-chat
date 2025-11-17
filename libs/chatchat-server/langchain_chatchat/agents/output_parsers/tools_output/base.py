@@ -1,17 +1,3 @@
-# -*- coding: utf-8 -*-
-from typing import Any, Dict, Optional
-
-from openai import BaseModel
-
-
-class PlatformToolsMessageToolCall(BaseModel):
-    name: Optional[str]
-    args: Optional[Dict[str, Any]]
-    id: Optional[str]
-
-
-class PlatformToolsMessageToolCallChunk(BaseModel):
-    name: Optional[str]
-    args: Optional[Dict[str, Any]]
-    id: Optional[str]
-    index: Optional[int]
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8e89bbe00237d3222c590587bfd4cd4ebdc0d1b66ad5e61f7685767490622af
+size 400

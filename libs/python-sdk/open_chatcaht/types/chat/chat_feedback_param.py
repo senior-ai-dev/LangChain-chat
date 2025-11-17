@@ -1,7 +1,3 @@
-from pydantic import Field, BaseModel
-
-
-class ChatFeedbackParam(BaseModel):
-    message_id: str = Field("", max_length=32, description="聊天记录id"),
-    score: int = Field(0, max=100, description="用户评分，满分100，越大表示评价越高"),
-    reason: str = Field("", description="用户评分理由，比如不符合事实等"),
+version https://git-lfs.github.com/spec/v1
+oid sha256:65d510309f2281a458c69523915d5d8bc5719312e3883a0fc6ee6170d881871c
+size 354

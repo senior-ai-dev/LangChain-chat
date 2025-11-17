@@ -1,14 +1,3 @@
-from typing import Optional
-
-from pydantic import BaseModel, Field
-from datetime import datetime
-
-
-class KnowledgeBaseInfo(BaseModel):
-    id: int = Field(default=None,  description="知识库id")
-    kb_name: str = Field(default=None,  description="知识库名称")
-    kb_info: Optional[str] = Field(default=None,  description="知识库信息")
-    vs_type: Optional[str] = Field(default=None,  description="向量库类型")
-    embed_model: Optional[str] = Field(default=None,  description="向量化模型")
-    file_count: Optional[int] = Field(default=None,  description="文件数量")
-    create_time: Optional[datetime] = Field(default=None,  description="创建时间")
+version https://git-lfs.github.com/spec/v1
+oid sha256:c136f151c3454d2e2629befa8caddcbf8d2ce45e2c0786a94c873c98932712df
+size 695

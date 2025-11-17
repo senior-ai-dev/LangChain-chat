@@ -1,22 +1,3 @@
-# LangChain 的 WikipediaQueryRun 工具
-from langchain_community.tools import WikipediaQueryRun
-from langchain_community.utilities import WikipediaAPIWrapper
-from chatchat.server.pydantic_v1 import Field
-
-
-
-from .tools_registry import regist_tool
-
-from langchain_chatchat.agent_toolkits.all_tools.tool import (
-    BaseToolOutput,
-)
-
-@regist_tool(title="维基百科搜索")
-def wikipedia_search(query: str = Field(description="The search query")):
-    """ A wrapper that uses Wikipedia to search."""
-    api_wrapper = WikipediaAPIWrapper(lang="zh")
-    tool = WikipediaQueryRun(api_wrapper=api_wrapper)
-    return BaseToolOutput(tool.run(tool_input=query))
-                          
-                          
-                          
+version https://git-lfs.github.com/spec/v1
+oid sha256:cbed39481334ca9499b5871474a48dd518ec3a4d8d19c8b7a751a576d6dddbf5
+size 762

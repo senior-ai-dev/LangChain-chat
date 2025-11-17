@@ -1,20 +1,3 @@
-# math_server.py
-from mcp.server.fastmcp import FastMCP
-
-mcp = FastMCP("Math")
-
-
-@mcp.tool()
-def add(a: int, b: int) -> int:
-    """Add two numbers"""
-    return a + b
-
-
-@mcp.tool()
-def multiply(a: int, b: int) -> int:
-    """Multiply two numbers"""
-    return a * b
-
-
-if __name__ == "__main__":
-    mcp.run(transport="stdio")
+version https://git-lfs.github.com/spec/v1
+oid sha256:21cc616cdf575cdf083e2082dfcf469a2cb6a0c0263122fb2d8f9d7a5c2003fb
+size 347

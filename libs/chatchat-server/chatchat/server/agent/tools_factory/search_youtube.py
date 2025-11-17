@@ -1,15 +1,3 @@
-from chatchat.server.pydantic_v1 import Field
-
-from .tools_registry import regist_tool
-
-from langchain_chatchat.agent_toolkits.all_tools.tool import (
-    BaseToolOutput,
-)
-
-@regist_tool(title="油管视频")
-def search_youtube(query: str = Field(description="Query for Videos search")):
-    """use this tools_factory to search youtube videos"""
-    from langchain_community.tools import YouTubeSearchTool
-
-    tool = YouTubeSearchTool()
-    return BaseToolOutput(tool.run(tool_input=query))
+version https://git-lfs.github.com/spec/v1
+oid sha256:bcf5b040844344b0d65c74d401afcdec5e9e4f18788cf6be1787c1b87a01818c
+size 507

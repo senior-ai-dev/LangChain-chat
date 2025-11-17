@@ -1,13 +1,3 @@
-from typing import Optional, Literal
-
-from open_chatcaht.types.standard_openai.base import OpenAIBaseInput
-
-
-class OpenAIAudioSpeechInput(OpenAIBaseInput):
-    input: str
-    model: str
-    voice: str
-    response_format: Optional[
-        Literal["mp3", "opus", "aac", "flac", "pcm", "wav"]
-    ] = None
-    speed: Optional[float] = None
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a638b61b602e56c24662f130b69c945fc3f58b573e0680eb8c1c6b24caeb4fc
+size 352

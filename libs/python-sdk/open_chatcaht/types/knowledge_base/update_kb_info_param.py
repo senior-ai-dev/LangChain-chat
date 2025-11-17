@@ -1,8 +1,3 @@
-from pydantic import BaseModel, Field
-
-
-class UpdateKbInfoParam(BaseModel):
-    knowledge_base_name: str = Field(
-        ..., description="知识库名称", examples=["samples"]
-    ),
-    kb_info: str = Field(..., description="知识库介绍", examples=["这是一个知识库"]),
+version https://git-lfs.github.com/spec/v1
+oid sha256:02753d8b43961d7aa048c847a72ecb2d86d26171c11aafc8b767a240de5242e5
+size 292

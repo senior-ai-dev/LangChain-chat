@@ -1,23 +1,3 @@
-from chatchat.server.pydantic_v1 import Field
-
-from .tools_registry import regist_tool
-
-
-from langchain_chatchat.agent_toolkits.all_tools.tool import (
-    BaseToolOutput,
-)
-
-@regist_tool(title="数学计算器")
-def calculate(text: str = Field(description="a math expression")) -> float:
-    """
-    Useful to answer questions about simple calculations.
-    translate user question to a math expression that can be evaluated by numexpr.
-    """
-    import numexpr
-
-    try:
-        ret = str(numexpr.evaluate(text))
-    except Exception as e:
-        ret = f"wrong: {e}"
-
-    return BaseToolOutput(ret)
+version https://git-lfs.github.com/spec/v1
+oid sha256:5878eb155f3a3bba025f6ac9dc6862ba7dede40a23c00f1dae2b3e0079fa20dc
+size 627

@@ -1,17 +1,3 @@
-import uuid
-
-from chatchat.server.db.models.conversation_model import ConversationModel
-from chatchat.server.db.session import with_session
-
-
-@with_session
-def add_conversation_to_db(session, chat_type, name="", conversation_id=None):
-    """
-    新增聊天记录
-    """
-    if not conversation_id:
-        conversation_id = uuid.uuid4().hex
-    c = ConversationModel(id=conversation_id, chat_type=chat_type, name=name)
-
-    session.add(c)
-    return c.id
+version https://git-lfs.github.com/spec/v1
+oid sha256:811be51b726ebb98b83c083273db5c5de3e7c9cbfdc44966c2ec5832637c3733
+size 476

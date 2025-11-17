@@ -1,10 +1,3 @@
-from typing import Union, List, Optional, Literal
-
-from open_chatcaht.types.standard_openai.base import OpenAIBaseInput
-
-
-class OpenAIEmbeddingsInput(OpenAIBaseInput):
-    input: Union[str, List[str]]
-    model: str
-    dimensions: Optional[int] = None
-    encoding_format: Optional[Literal["float", "base64"]] = None
+version https://git-lfs.github.com/spec/v1
+oid sha256:abe509f2d771b91498c51c40c0f1b37e038913898258e91ba5d2dc6185bc5605
+size 328

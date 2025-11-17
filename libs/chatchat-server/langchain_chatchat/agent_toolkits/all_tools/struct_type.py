@@ -1,19 +1,3 @@
-# -*- coding: utf-8 -*-
-"""IndexStructType class."""
-
-from enum import Enum
-
-
-class AdapterAllToolStructType(str, Enum):
-    """
-
-    Attributes:
-        DICT ("dict"):
-
-    """
-
-    # TODO: refactor so these are properties on the base class
-
-    CODE_INTERPRETER = "code_interpreter"
-    DRAWING_TOOL = "drawing_tool"
-    WEB_BROWSER = "web_browser"
+version https://git-lfs.github.com/spec/v1
+oid sha256:93f66bdf58a854d28e6ff1f1dba2d269460983c96d0286d63fcfb08e597d0967
+size 370
